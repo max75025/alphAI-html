@@ -1484,7 +1484,7 @@
                         </div> <!-- end col -->
                     </div>
                     <!-- end row -->
-                    
+
 
                     <div id="log-info-modal" class="modal fade" tabindex="-1" role="dialog"
                         aria-labelledby="full-width-modalLabel" aria-hidden="true" style="display: none;">
@@ -1517,7 +1517,7 @@
                                                 </label>
 
                                                 <div class="table-responsive">
-                                                    <table id="demo-foo-pagination"
+                                                    <table data-use-parent-width="true" id="demo-foo-pagination"
                                                         class="table mb-0 table-bordered toggle-arrow-tiny"
                                                         data-page-size="5">
                                                         <thead>
@@ -1820,14 +1820,40 @@
                                             </div> <!-- end card-box -->
                                         </div> <!-- end col -->
                                     </div>
+                                    <div class="row">
+
+                                        <div class="col-12">
+                                            <div class="card-box">
+                                                <h4 class="header-title">Pagination</h4>
+                                                <p class="sub-header">
+                                                    Include pagination in your FooTable.
+                                                </p>
+                                                <pre class="sub-header">
+
+GET /vulnerabilities/sqli/?id=%27&Submit=Submit HTTP/1.0
+Host: 127.0.0.1
+Connection: close
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6,la;q=0.5
+Cache-Control: max-age=0
+Connection: close
+Cookie: __tawkuuid=e::localhost::7ArIBieu8FszQLy1Ymzab7Bs7CeWoo4HHTk8B84Q70h6W6wX0W1MrsUDRFl3+9bJ::2; csrftoken=69cec5389ba918855bb02b2bb4e024ac67496c3d917af09eacc57fcb0aee4083cf5a4b26e35361b55380a2d724192131cc245ddbdc485e968f4bcfdd72e69ade; PHPSESSID=ahja7cmme8i6bbrpo8m56fmfel; security=low; TawkConnectionTime=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+X-Forwarded-For: 127.0.0.1
+                                            </pre>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            </div><!-- /.modal-content -->
-                        </div><!-- /.modal-dialog -->
-                    </div><!-- /.modal -->
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
 
 
-                    <!-- <div class="row">
+                <!-- <div class="row">
                         <div class="col-xl-4">
                             <div class="card-box">
                                 <div class="row">
@@ -1900,79 +1926,100 @@
                         </div> 
 
                     </div> -->
-                    <!-- end row -->
+                <!-- end row -->
 
 
-                    <div class="row">
-                        <div class="col-xl-8">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="card-widgets">
-                                        <a href="javascript: void(0);" data-toggle="reload"><i
-                                                class="mdi mdi-refresh"></i></a>
-                                        <a data-toggle="collapse" href="#cardCollpase4" role="button"
-                                            aria-expanded="false" aria-controls="cardCollpase4"><i
-                                                class="mdi mdi-minus"></i></a>
-                                        <a href="javascript: void(0);" data-toggle="remove"><i
-                                                class="mdi mdi-close"></i></a>
-                                    </div>
-                                    <h4 class="header-title mb-0">Геопозиция атакующих</h4>
+                <div class="row">
+                    <div class="col-xl-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-widgets">
+                                    <a href="javascript: void(0);" data-toggle="reload"><i
+                                            class="mdi mdi-refresh"></i></a>
+                                    <a data-toggle="collapse" href="#cardCollpase4" role="button" aria-expanded="false"
+                                        aria-controls="cardCollpase4"><i class="mdi mdi-minus"></i></a>
+                                    <a href="javascript: void(0);" data-toggle="remove"><i
+                                            class="mdi mdi-close"></i></a>
+                                </div>
+                                <h4 class="header-title mb-0">Геопозиция атакующих</h4>
 
-                                    <div id="cardCollpase4" class="collapse pt-3 show">
-                                        <div id="world-map-markers" style="height: 433px"></div>
-                                    </div> <!-- collapsed end -->
-                                </div> <!-- end card-body -->
-                            </div> <!-- end card-->
-                        </div> <!-- end col -->
-                        <div class="col-xl-4 ">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="card-widgets">
-                                        <a href="javascript: void(0);" data-toggle="reload"><i
-                                                class="mdi mdi-refresh"></i></a>
-                                        <a data-toggle="collapse" href="#cardCollpase5" role="button"
-                                            aria-expanded="false" aria-controls="cardCollpase5"><i
-                                                class="mdi mdi-minus"></i></a>
-                                        <a href="javascript: void(0);" data-toggle="remove"><i
-                                                class="mdi mdi-close"></i></a>
-                                    </div>
-                                    <h4 class="header-title mb-0">Типы атакующих</h4>
-
-                                    <div class="row mt-4 text-center">
-                                        <div class="col-4">
-                                            <p class="text-muted font-15 mb-1 text-truncate">Сервер</p>
-                                            <h4><i class="fe-arrow-down text-success mr-1"></i>3.8k</h4>
-                                        </div>
-                                        <div class="col-4">
-                                            <p class="text-muted font-15 mb-1 text-truncate">База</p>
-                                            <h4><i class="fe-arrow-up text-danger mr-1"></i>1.1k</h4>
-                                        </div>
-                                        <div class="col-4">
-                                            <p class="text-muted font-15 mb-1 text-truncate">Клиент</p>
-                                            <h4><i class="fe-arrow-down text-success mr-1"></i>25k</h4>
-                                        </div>
-                                    </div>
-
-                                    <div id="cardCollpase5" class="collapse pt-3 show">
-                                        <div class="card mb-0">
-                                            <div class="card-body">
-                                                <div id="apex-pie-4" class="apex-charts"></div>
-
-                                            </div> <!-- end card-body -->
-                                            <!-- <div class=" text-center mt-2 mb-2"><button type="button"
-                                                    class=" col-8 btn btn-secondary btn-rounded waves-effect">IP адреса
-                                                    атакующих</button></div> -->
-                                        </div> <!-- end card-->
-
-                                    </div>
-
+                                <div id="cardCollpase4" class="collapse pt-3 show">
+                                    <div id="world-map-markers" style="height: 433px"></div>
                                 </div> <!-- collapsed end -->
                             </div> <!-- end card-body -->
                         </div> <!-- end card-->
                     </div> <!-- end col -->
+                    <div class="col-xl-4 ">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-widgets">
+                                    <a href="javascript: void(0);" data-toggle="reload"><i
+                                            class="mdi mdi-refresh"></i></a>
+                                    <a data-toggle="collapse" href="#cardCollpase5" role="button" aria-expanded="false"
+                                        aria-controls="cardCollpase5"><i class="mdi mdi-minus"></i></a>
+                                    <a href="javascript: void(0);" data-toggle="remove"><i
+                                            class="mdi mdi-close"></i></a>
+                                </div>
+                                <h4 class="header-title mb-0">Типы атакующих</h4>
+
+                                <div class="row mt-4 text-center">
+                                    <div class="col-4">
+                                        <p class="text-muted font-15 mb-1 text-truncate">Сервер</p>
+                                        <h4><i class="fe-arrow-down text-success mr-1"></i>3.8k</h4>
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="text-muted font-15 mb-1 text-truncate">База</p>
+                                        <h4><i class="fe-arrow-up text-danger mr-1"></i>1.1k</h4>
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="text-muted font-15 mb-1 text-truncate">Клиент</p>
+                                        <h4><i class="fe-arrow-down text-success mr-1"></i>25k</h4>
+                                    </div>
+                                </div>
+
+                                <div id="cardCollpase5" class="collapse pt-3 show">
+                                    <div class="card mb-0">
+                                        <div class="card-body">
+                                            <div id="apex-pie-4" class="apex-charts"></div>
+
+                                        </div> <!-- end card-body -->
+                                        <!-- <div class=" text-center mt-2 mb-2"><button type="button"
+                                                    class=" col-8 btn btn-secondary btn-rounded waves-effect">IP адреса
+                                                    атакующих</button></div> -->
+                                    </div> <!-- end card-->
+
+                                </div>
+
+                            </div> <!-- collapsed end -->
+                        </div> <!-- end card-body -->
+                    </div> <!-- end card-->
+                </div> <!-- end col -->
 
 
-                    <!-- <div class=" col-md-6 col-sm-12">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                    Launch demo modal
+                </button>
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                            </div>
+                            <div class="modal-body">
+                                <table id="modal-example-1" class="table" data-paging="true" data-filtering="true"
+                                    data-sorting="true"></table>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- <div class=" col-md-6 col-sm-12">
                             <div class="card-box">
                                 <h4 class="header-title">Pagination</h4>
                                 <p class="sub-header">
@@ -2108,7 +2155,7 @@
 
 
 
-                    <!-- <div class="col-xl-4 ">
+                <!-- <div class="col-xl-4 ">
                             <div class="card">
                                 <div class="card-body">
                                     <div class="card-widgets">
@@ -2134,7 +2181,7 @@
                                         </div>
 
                                     </div> -->
-                    <!-- <div class="table-responsive">
+                <!-- <div class="table-responsive">
                                         <table class="table table-hover table-centered mb-0">
                                             <thead>
                                                 <tr>
@@ -2217,33 +2264,36 @@
                             </div>
                         </div> 
                     </div> -->
+            </div>
+            <!-- end row -->
+
+        </div> <!-- container -->
+
+    </div> <!-- content -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    2016 - 2019 &copy; 2WAF INFORMATION SECURITY SERVICE
                 </div>
-                <!-- end row -->
+                <div class="col-md-6">
+                    <div class="text-md-right footer-links d-none d-sm-block">
+                        <a href="javascript:void(0);">О нас</a>
+                        <a href="javascript:void(0);">Помощь</a>
 
-            </div> <!-- container -->
-
-        </div> <!-- content -->
-
-        <!-- Footer Start -->
-        <footer class="footer">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6">
-                        2016 - 2019 &copy; 2WAF INFORMATION SECURITY SERVICE
-                    </div>
-                    <div class="col-md-6">
-                        <div class="text-md-right footer-links d-none d-sm-block">
-                            <a href="javascript:void(0);">О нас</a>
-                            <a href="javascript:void(0);">Помощь</a>
-
-                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- end Footer -->
+        </div>
+    </footer>
+    <!-- end Footer -->
 
     </div>
+
+
+
 
     <!-- ============================================================== -->
     <!-- End Page content -->
@@ -2453,9 +2503,21 @@
 
     <!-- Right bar overlay-->
     <div class="rightbar-overlay"></div>
-
     <!-- Vendor js -->
     <script src="assets/js/vendor.min.js"></script>
+
+    <!-- Footable js -->
+    <script src="assets/libs/footable/footable.all.min.js"></script>
+
+    <!-- Init js -->
+    <script src="assets/js/pages/foo-tables.init.js"></script>
+
+
+
+
+
+
+
 
     <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
     <script src="assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
@@ -2476,8 +2538,11 @@
     <!-- App js -->
     <script src="assets/js/app.min.js"></script>
 
-   
-    
+
+
+
+
+
 
 
     <!-- Init js-->
@@ -2666,11 +2731,10 @@
     </script>
 
 
- <!-- Footable js -->
- <script src="assets/libs/footable/footable.all.min.js"></script>
 
- <!-- Init js -->
- <script src="assets/js/pages/foo-tables.init.js"></script>
+
+
+
 
 
 

@@ -451,10 +451,19 @@
 
                         <li>
                             <a href="javascript: void(0);" class="waves-effect">
-                                <i class=" remixicon-shield-flash-line"></i>
+                                <i class="remixicon-shield-flash-line"></i>
                                 <span> Фаервол и атаки </span>
+                                <span class="menu-arrow"></span>
                             </a>
-
+                            <ul class="nav-second-level" aria-expanded="false">
+                                <li>
+                                    <a href="maps-google.html">Дашборд</a>
+                                </li>
+                                <li>
+                                    <a href="maps-vector.html">Забаненые</a>
+                                </li>
+                               
+                            </ul>
                         </li>
 
                         <li>
@@ -633,7 +642,7 @@
                                     <div class="row mt-4 text-center">
                                         <div class="col-4">
                                             <p class="text-muted font-15 mb-1 text-truncate">Атаки</p>
-                                            <h4><i class="fe-arrow-down text-sucess mr-1"></i>7.8k</h4>
+                                            <h4><i class="fe-arrow-down text-success mr-1"></i>7.8k</h4>
                                         </div>
                                         <div class="col-4">
                                             <p class="text-muted font-15 mb-1 text-truncate">Боты</p>
@@ -865,19 +874,17 @@
                                                             style="text-align: left;">
                                                             <div class="btn-group btn-group-sm" style="float: none;">
                                                                 <button title="Просмотреть логи" type="button"
-                                                                    class="tabledit-edit-button btn btn-primary waves-effect mr-2"
+                                                                    class="tabledit-edit-button btn btn-success waves-effect mr-2"
                                                                     style="float: none;" data-toggle="modal"
                                                                     data-target="#log-info-modal"><span
                                                                         class=" remixicon-information-line"></span></button>
 
                                                                 <button title="Репутация" type="button"
-                                                                    class="tabledit-edit-button btn btn-primary mr-2"
-                                                                    style="float: none;"><span
+                                                                    class="tabledit-edit-button btn btn-success mr-2"
+                                                                    style="float: none;"  data-toggle="modal"
+                                                                    data-target="#modal-reputation"><span
                                                                         class=" remixicon-bar-chart-line"></span></button>
-                                                                <button title="Забанить" type="button"
-                                                                    class="tabledit-edit-button btn btn-danger"
-                                                                    style="float: none;"><span
-                                                                        class="  remixicon-forbid-line"></span></button>
+
                                                             </div>
                                                         </div>
                                                     </td>
@@ -899,17 +906,14 @@
                                                             style="text-align: left;">
                                                             <div class="btn-group btn-group-sm" style="float: none;">
                                                                 <button title="Просмотреть логи" type="button"
-                                                                    class="tabledit-edit-button btn btn-primary mr-2"
+                                                                    class="tabledit-edit-button btn btn-success mr-2"
                                                                     style="float: none;"><span
                                                                         class=" remixicon-information-line"></span></button>
                                                                 <button title="Репутация" type="button"
-                                                                    class="tabledit-edit-button btn btn-primary mr-2"
+                                                                    class="tabledit-edit-button btn btn-success mr-2"
                                                                     style="float: none;"><span
                                                                         class=" remixicon-bar-chart-line"></span></button>
-                                                                <button title="Разбанить" type="button"
-                                                                    class="tabledit-edit-button btn btn-success "
-                                                                    style="float: none;"><span
-                                                                        class="   remixicon-checkbox-circle-line"></span></button>
+
                                                             </div>
                                                         </div>
                                                     </td>
@@ -934,17 +938,14 @@
                                                             style="text-align: left;">
                                                             <div class="btn-group btn-group-sm" style="float: none;">
                                                                 <button title="Просмотреть логи" type="button"
-                                                                    class="tabledit-edit-button btn btn-primary mr-2"
+                                                                    class="tabledit-edit-button btn btn-success mr-2"
                                                                     style="float: none;"><span
                                                                         class=" remixicon-information-line"></span></button>
                                                                 <button title="Репутация" type="button"
-                                                                    class="tabledit-edit-button btn btn-primary mr-2"
+                                                                    class="tabledit-edit-button btn btn-success mr-2"
                                                                     style="float: none;"><span
                                                                         class=" remixicon-bar-chart-line"></span></button>
-                                                                <button title="Забанить" type="button"
-                                                                    class="tabledit-edit-button btn btn-danger"
-                                                                    style="float: none;"><span
-                                                                        class="  remixicon-forbid-line"></span></button>
+
                                                             </div>
                                                         </div>
                                                     </td>
@@ -975,17 +976,14 @@
                                                             style="text-align: left;">
                                                             <div class="btn-group btn-group-sm" style="float: none;">
                                                                 <button title="Просмотреть логи" type="button"
-                                                                    class="tabledit-edit-button btn btn-primary mr-2"
+                                                                    class="tabledit-edit-button btn btn-success mr-2"
                                                                     style="float: none;"><span
                                                                         class=" remixicon-information-line"></span></button>
                                                                 <button title="Репутация" type="button"
-                                                                    class="tabledit-edit-button btn btn-primary mr-2"
+                                                                    class="tabledit-edit-button btn btn-success mr-2"
                                                                     style="float: none;"><span
                                                                         class=" remixicon-bar-chart-line"></span></button>
-                                                                <button title="Забанить" type="button"
-                                                                    class="tabledit-edit-button btn btn-danger"
-                                                                    style="float: none;"><span
-                                                                        class="  remixicon-forbid-line"></span></button>
+
                                                             </div>
                                                         </div>
                                                     </td>
@@ -1013,17 +1011,14 @@
                                                             style="text-align: left;">
                                                             <div class="btn-group btn-group-sm" style="float: none;">
                                                                 <button title="Просмотреть логи" type="button"
-                                                                    class="tabledit-edit-button btn btn-primary mr-2"
+                                                                    class="tabledit-edit-button btn btn-success mr-2"
                                                                     style="float: none;"><span
                                                                         class=" remixicon-information-line"></span></button>
                                                                 <button title="Репутация" type="button"
-                                                                    class="tabledit-edit-button btn btn-primary mr-2"
+                                                                    class="tabledit-edit-button btn btn-success mr-2"
                                                                     style="float: none;"><span
                                                                         class=" remixicon-bar-chart-line"></span></button>
-                                                                <button title="Забанить" type="button"
-                                                                    class="tabledit-edit-button btn btn-danger"
-                                                                    style="float: none;"><span
-                                                                        class="  remixicon-forbid-line"></span></button>
+
                                                             </div>
                                                         </div>
                                                     </td>
@@ -1048,17 +1043,14 @@
                                                             style="text-align: left;">
                                                             <div class="btn-group btn-group-sm" style="float: none;">
                                                                 <button title="Просмотреть логи" type="button"
-                                                                    class="tabledit-edit-button btn btn-primary mr-2"
+                                                                    class="tabledit-edit-button btn btn-success mr-2"
                                                                     style="float: none;"><span
                                                                         class=" remixicon-information-line"></span></button>
                                                                 <button title="Репутация" type="button"
-                                                                    class="tabledit-edit-button btn btn-primary mr-2"
+                                                                    class="tabledit-edit-button btn btn-success mr-2"
                                                                     style="float: none;"><span
                                                                         class=" remixicon-bar-chart-line"></span></button>
-                                                                <button title="Забанить" type="button"
-                                                                    class="tabledit-edit-button btn btn-danger"
-                                                                    style="float: none;"><span
-                                                                        class="  remixicon-forbid-line"></span></button>
+
                                                             </div>
                                                         </div>
                                                     </td>
@@ -1093,17 +1085,14 @@
                                                             style="text-align: left;">
                                                             <div class="btn-group btn-group-sm" style="float: none;">
                                                                 <button title="Просмотреть логи" type="button"
-                                                                    class="tabledit-edit-button btn btn-primary mr-2"
+                                                                    class="tabledit-edit-button btn btn-success mr-2"
                                                                     style="float: none;"><span
                                                                         class=" remixicon-information-line"></span></button>
                                                                 <button title="Репутация" type="button"
-                                                                    class="tabledit-edit-button btn btn-primary mr-2"
+                                                                    class="tabledit-edit-button btn btn-success mr-2"
                                                                     style="float: none;"><span
                                                                         class=" remixicon-bar-chart-line"></span></button>
-                                                                <button title="Забанить" type="button"
-                                                                    class="tabledit-edit-button btn btn-danger"
-                                                                    style="float: none;"><span
-                                                                        class="  remixicon-forbid-line"></span></button>
+
                                                             </div>
                                                         </div>
                                                     </td>
@@ -1138,17 +1127,14 @@
                                                             style="text-align: left;">
                                                             <div class="btn-group btn-group-sm" style="float: none;">
                                                                 <button title="Просмотреть логи" type="button"
-                                                                    class="tabledit-edit-button btn btn-primary mr-2"
+                                                                    class="tabledit-edit-button btn btn-success mr-2"
                                                                     style="float: none;"><span
                                                                         class=" remixicon-information-line"></span></button>
                                                                 <button title="Репутация" type="button"
-                                                                    class="tabledit-edit-button btn btn-primary mr-2"
+                                                                    class="tabledit-edit-button btn btn-success mr-2"
                                                                     style="float: none;"><span
                                                                         class=" remixicon-bar-chart-line"></span></button>
-                                                                <button title="Забанить" type="button"
-                                                                    class="tabledit-edit-button btn btn-danger"
-                                                                    style="float: none;"><span
-                                                                        class="  remixicon-forbid-line"></span></button>
+
                                                             </div>
                                                         </div>
                                                     </td>
@@ -1176,17 +1162,14 @@
                                                             style="text-align: left;">
                                                             <div class="btn-group btn-group-sm" style="float: none;">
                                                                 <button title="Просмотреть логи" type="button"
-                                                                    class="tabledit-edit-button btn btn-primary mr-2"
+                                                                    class="tabledit-edit-button btn btn-success mr-2"
                                                                     style="float: none;"><span
                                                                         class=" remixicon-information-line"></span></button>
                                                                 <button title="Репутация" type="button"
-                                                                    class="tabledit-edit-button btn btn-primary mr-2"
+                                                                    class="tabledit-edit-button btn btn-success mr-2"
                                                                     style="float: none;"><span
                                                                         class=" remixicon-bar-chart-line"></span></button>
-                                                                <button title="Забанить" type="button"
-                                                                    class="tabledit-edit-button btn btn-danger"
-                                                                    style="float: none;"><span
-                                                                        class="  remixicon-forbid-line"></span></button>
+
                                                             </div>
                                                         </div>
                                                     </td>
@@ -1217,17 +1200,14 @@
                                                             style="text-align: left;">
                                                             <div class="btn-group btn-group-sm" style="float: none;">
                                                                 <button title="Просмотреть логи" type="button"
-                                                                    class="tabledit-edit-button btn btn-primary mr-2"
+                                                                    class="tabledit-edit-button btn btn-success mr-2"
                                                                     style="float: none;"><span
                                                                         class=" remixicon-information-line"></span></button>
                                                                 <button title="Репутация" type="button"
-                                                                    class="tabledit-edit-button btn btn-primary mr-2"
+                                                                    class="tabledit-edit-button btn btn-success mr-2"
                                                                     style="float: none;"><span
                                                                         class=" remixicon-bar-chart-line"></span></button>
-                                                                <button title="Забанить" type="button"
-                                                                    class="tabledit-edit-button btn btn-danger"
-                                                                    style="float: none;"><span
-                                                                        class="  remixicon-forbid-line"></span></button>
+
                                                             </div>
                                                         </div>
                                                     </td>
@@ -1257,17 +1237,14 @@
                                                             style="text-align: left;">
                                                             <div class="btn-group btn-group-sm" style="float: none;">
                                                                 <button title="Просмотреть логи" type="button"
-                                                                    class="tabledit-edit-button btn btn-primary mr-2"
+                                                                    class="tabledit-edit-button btn btn-success mr-2"
                                                                     style="float: none;"><span
                                                                         class=" remixicon-information-line"></span></button>
                                                                 <button title="Репутация" type="button"
-                                                                    class="tabledit-edit-button btn btn-primary mr-2"
+                                                                    class="tabledit-edit-button btn btn-success mr-2"
                                                                     style="float: none;"><span
                                                                         class=" remixicon-bar-chart-line"></span></button>
-                                                                <button title="Забанить" type="button"
-                                                                    class="tabledit-edit-button btn btn-danger"
-                                                                    style="float: none;"><span
-                                                                        class="  remixicon-forbid-line"></span></button>
+
                                                             </div>
                                                         </div>
                                                     </td>
@@ -1297,17 +1274,14 @@
                                                             style="text-align: left;">
                                                             <div class="btn-group btn-group-sm" style="float: none;">
                                                                 <button title="Просмотреть логи" type="button"
-                                                                    class="tabledit-edit-button btn btn-primary mr-2"
+                                                                    class="tabledit-edit-button btn btn-success mr-2"
                                                                     style="float: none;"><span
                                                                         class=" remixicon-information-line"></span></button>
                                                                 <button title="Репутация" type="button"
-                                                                    class="tabledit-edit-button btn btn-primary mr-2"
+                                                                    class="tabledit-edit-button btn btn-success mr-2"
                                                                     style="float: none;"><span
                                                                         class=" remixicon-bar-chart-line"></span></button>
-                                                                <button title="Забанить" type="button"
-                                                                    class="tabledit-edit-button btn btn-danger"
-                                                                    style="float: none;"><span
-                                                                        class="  remixicon-forbid-line"></span></button>
+
                                                             </div>
                                                         </div>
                                                     </td>
@@ -1331,17 +1305,14 @@
                                                             style="text-align: left;">
                                                             <div class="btn-group btn-group-sm" style="float: none;">
                                                                 <button title="Просмотреть логи" type="button"
-                                                                    class="tabledit-edit-button btn btn-primary mr-2"
+                                                                    class="tabledit-edit-button btn btn-success mr-2"
                                                                     style="float: none;"><span
                                                                         class=" remixicon-information-line"></span></button>
                                                                 <button title="Репутация" type="button"
-                                                                    class="tabledit-edit-button btn btn-primary mr-2"
+                                                                    class="tabledit-edit-button btn btn-success mr-2"
                                                                     style="float: none;"><span
                                                                         class=" remixicon-bar-chart-line"></span></button>
-                                                                <button title="Забанить" type="button"
-                                                                    class="tabledit-edit-button btn btn-danger"
-                                                                    style="float: none;"><span
-                                                                        class="  remixicon-forbid-line"></span></button>
+
                                                             </div>
                                                         </div>
                                                     </td>
@@ -1371,17 +1342,14 @@
                                                             style="text-align: left;">
                                                             <div class="btn-group btn-group-sm" style="float: none;">
                                                                 <button title="Просмотреть логи" type="button"
-                                                                    class="tabledit-edit-button btn btn-primary mr-2"
+                                                                    class="tabledit-edit-button btn btn-success mr-2"
                                                                     style="float: none;"><span
                                                                         class=" remixicon-information-line"></span></button>
                                                                 <button title="Репутация" type="button"
-                                                                    class="tabledit-edit-button btn btn-primary mr-2"
+                                                                    class="tabledit-edit-button btn btn-success mr-2"
                                                                     style="float: none;"><span
                                                                         class=" remixicon-bar-chart-line"></span></button>
-                                                                <button title="Забанить" type="button"
-                                                                    class="tabledit-edit-button btn btn-danger"
-                                                                    style="float: none;"><span
-                                                                        class="  remixicon-forbid-line"></span></button>
+
                                                             </div>
                                                         </div>
                                                     </td>
@@ -1410,17 +1378,14 @@
                                                             style="text-align: left;">
                                                             <div class="btn-group btn-group-sm" style="float: none;">
                                                                 <button title="Просмотреть логи" type="button"
-                                                                    class="tabledit-edit-button btn btn-primary mr-2"
+                                                                    class="tabledit-edit-button btn btn-success mr-2"
                                                                     style="float: none;"><span
                                                                         class=" remixicon-information-line"></span></button>
                                                                 <button title="Репутация" type="button"
-                                                                    class="tabledit-edit-button btn btn-primary mr-2"
+                                                                    class="tabledit-edit-button btn btn-success mr-2"
                                                                     style="float: none;"><span
                                                                         class=" remixicon-bar-chart-line"></span></button>
-                                                                <button title="Забанить" type="button"
-                                                                    class="tabledit-edit-button btn btn-danger"
-                                                                    style="float: none;"><span
-                                                                        class="  remixicon-forbid-line"></span></button>
+
                                                             </div>
                                                         </div>
                                                     </td>
@@ -1449,17 +1414,14 @@
                                                             style="text-align: left;">
                                                             <div class="btn-group btn-group-md" style="float: none;">
                                                                 <button title="Просмотреть логи" type="button"
-                                                                    class="tabledit-edit-button btn btn-primary mr-2"
+                                                                    class="tabledit-edit-button btn btn-success mr-2"
                                                                     style="float: none;"><span
                                                                         class=" remixicon-information-line"></span></button>
                                                                 <button title="Репутация" type="button"
-                                                                    class="tabledit-edit-button btn btn-primary mr-2"
+                                                                    class="tabledit-edit-button btn btn-success mr-2"
                                                                     style="float: none;"><span
                                                                         class=" remixicon-bar-chart-line"></span></button>
-                                                                <button title="Забанить" type="button"
-                                                                    class="tabledit-edit-button btn btn-danger"
-                                                                    style="float: none;"><span
-                                                                        class="  remixicon-forbid-line"></span></button>
+
                                                             </div>
                                                         </div>
                                                     </td>
@@ -1499,9 +1461,9 @@
                                     <div class="row">
                                         <div class="col-sm-12">
                                             <div class="card-box">
-                                                
 
-                                                
+
+
 
                                                 <div class="table-responsive">
                                                     <table data-use-parent-width="true" id="demo-foo-pagination"
@@ -1511,10 +1473,10 @@
                                                             <tr>
                                                                 <th data-toggle="true">Время атаки</th>
                                                                 <th>Тип</th>
-                                                                <th >Метод</th>
+                                                                <th>Метод</th>
                                                                 <th>Предпросмотр</th>
-                                                               
-                                                                
+
+
                                                             </tr>
                                                         </thead>
                                                         <tbody>
@@ -1522,65 +1484,74 @@
                                                                 <td>27-10-2018 : 10:23:13</td>
                                                                 <td>database</td>
                                                                 <td>POST</td>
-                                                                <td>GET /vulnerabilities/sqli/?id=%27&Submit=Submit ... <a href="">весь запрос</a>
+                                                                <td>GET /vulnerabilities/sqli/?id=%27&Submit=Submit ...
+                                                                    <a href="#"
+                                                                        onclick="document.getElementById('raw-logs').classList.remove('d-none');">весь
+                                                                        запрос</a>
                                                                 </td>
-                                                                
-                                                                
+
+
                                                             </tr>
                                                             <tr>
                                                                 <td>27-10-2018 : 10:23:13</td>
                                                                 <td>database</td>
                                                                 <td>POST</td>
-                                                                <td>GET /vulnerabilities/sqli/?id=%27&Submit=Submit ... <a href="">весь запрос</a>
+                                                                <td>GET /vulnerabilities/sqli/?id=%27&Submit=Submit ...
+                                                                    <a href="">весь запрос</a>
                                                                 </td>
-                                                               
+
                                                             </tr>
                                                             <tr>
                                                                 <td>27-10-2018 : 10:23:13</td>
                                                                 <td>database</td>
                                                                 <td>POST</td>
-                                                                <td>GET /vulnerabilities/sqli/?id=%27&Submit=Submit ... <a href="">весь запрос</a>
+                                                                <td>GET /vulnerabilities/sqli/?id=%27&Submit=Submit ...
+                                                                    <a href="">весь запрос</a>
                                                                 </td>
-                                                                
-                                                                
+
+
                                                             </tr>
                                                             <tr>
                                                                 <td>27-10-2018 : 10:23:13</td>
                                                                 <td>database</td>
                                                                 <td>POST</td>
-                                                                <td>GET /vulnerabilities/sqli/?id=%27&Submit=Submit ... <a href="">весь запрос</a>
+                                                                <td>GET /vulnerabilities/sqli/?id=%27&Submit=Submit ...
+                                                                    <a href="">весь запрос</a>
                                                                 </td>
-                                                               
-                                                                
+
+
                                                             </tr>
                                                             <tr>
                                                                 <td>27-10-2018 : 10:23:13</td>
                                                                 <td>database</td>
                                                                 <td>POST</td>
-                                                                <td>GET /vulnerabilities/sqli/?id=%27&Submit=Submit ... <a href="">весь запрос</a>
+                                                                <td>GET /vulnerabilities/sqli/?id=%27&Submit=Submit ...
+                                                                    <a href="">весь запрос</a>
                                                                 </td>
-                                                               
-                                                                
+
+
                                                             </tr>
                                                             <tr>
                                                                 <td>27-10-2018 : 10:23:13</td>
                                                                 <td>database</td>
                                                                 <td>POST</td>
-                                                                <td>GET /vulnerabilities/sqli/?id=%27&Submit=Submit ... <a href="">весь запрос</a>
+                                                                <td>GET /vulnerabilities/sqli/?id=%27&Submit=Submit ...
+                                                                    <a href="">весь запрос</a>
                                                                 </td>
-                                                               
-                                                                
+
+
                                                             </tr>
                                                             <tr>
                                                                 <td>27-10-2018 : 10:23:13</td>
                                                                 <td>database</td>
                                                                 <td>POST</td>
-                                                                <td>GET /vulnerabilities/sqli/?id=%27&Submit=Submit ...  <a href="">весь запрос</a>
+                                                                <td>GET /vulnerabilities/sqli/?id=%27&Submit=Submit ...
+                                                                    <a href="">весь запрос</a>
                                                                 </td>
-                                                                
-                                                                
+
+
                                                             </tr>
-                                                            
+
                                                         </tbody>
                                                         <tfoot>
                                                             <tr class="active">
@@ -1598,40 +1569,40 @@
                                             </div> <!-- end card-box -->
                                         </div> <!-- end col -->
                                     </div>
-                                    <div class="row">
+                                    <div id="raw-logs" class="row d-none">
 
                                         <div class="col-12">
                                             <div class="card-box">
 
                                                 <div class="float-right d-none d-md-inline-block">
                                                     <button title="Пометить как ложное срабатывание" type="button"
-                                                    class="tabledit-edit-button btn btn-primary mr-1"
-                                                    style="float: none;"><span
-                                                        class="  remixicon-delete-back-line"></span></button>
+                                                        class="tabledit-edit-button btn btn-primary mr-1"
+                                                        style="float: none;"><span
+                                                            class="  remixicon-delete-back-line"></span></button>
 
 
                                                     <button title="Забанить" type="button"
-                                                    class="tabledit-edit-button btn btn-danger"
-                                                    style="float: none;"><span
-                                                        class="  remixicon-forbid-line"></span></button>
+                                                        class="tabledit-edit-button btn btn-danger"
+                                                        style="float: none;"><span
+                                                            class="  remixicon-forbid-line"></span></button>
                                                 </div>
-                                                
+
                                                 <h3 class="header-title">Сырой зарпос</h3>
-                                                
+
                                                 <pre class="sub-header">
 
-GET /vulnerabilities/sqli/?id=%27&Submit=Submit HTTP/1.0
-Host: 127.0.0.1
-Connection: close
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
-Accept-Encoding: gzip, deflate, br
-Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6,la;q=0.5
-Cache-Control: max-age=0
-Connection: close
-Cookie: __tawkuuid=e::localhost::7ArIBieu8FszQLy1Ymzab7Bs7CeWoo4HHTk8B84Q70h6W6wX0W1MrsUDRFl3+9bJ::2; csrftoken=69cec5389ba918855bb02b2bb4e024ac67496c3d917af09eacc57fcb0aee4083cf5a4b26e35361b55380a2d724192131cc245ddbdc485e968f4bcfdd72e69ade; PHPSESSID=ahja7cmme8i6bbrpo8m56fmfel; security=low; TawkConnectionTime=0
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
-X-Forwarded-For: 127.0.0.1
+                                                    GET /vulnerabilities/sqli/?id=%27&Submit=Submit HTTP/1.0
+                                                    Host: 127.0.0.1
+                                                    Connection: close
+                                                    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+                                                    Accept-Encoding: gzip, deflate, br
+                                                    Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6,la;q=0.5
+                                                    Cache-Control: max-age=0
+                                                    Connection: close
+                                                    Cookie: __tawkuuid=e::localhost::7ArIBieu8FszQLy1Ymzab7Bs7CeWoo4HHTk8B84Q70h6W6wX0W1MrsUDRFl3+9bJ::2; csrftoken=69cec5389ba918855bb02b2bb4e024ac67496c3d917af09eacc57fcb0aee4083cf5a4b26e35361b55380a2d724192131cc245ddbdc485e968f4bcfdd72e69ade; PHPSESSID=ahja7cmme8i6bbrpo8m56fmfel; security=low; TawkConnectionTime=0
+                                                    Upgrade-Insecure-Requests: 1
+                                                    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+                                                    X-Forwarded-For: 127.0.0.1
                                             </pre>
                                             </div>
                                         </div>
@@ -1639,84 +1610,132 @@ X-Forwarded-For: 127.0.0.1
                                 </div>
                             </div>
                         </div><!-- /.modal-content -->
-                    </div><!-- /.modal-dialog -->
-                </div><!-- /.modal -->
+                    </div><!-- /.modal-->
 
 
-                <!-- <div class="row">
-                        <div class="col-xl-4">
-                            <div class="card-box">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="avatar-sm bg-success rounded-circle d-flex justify-content-center">
-                                            <img src="waf-assets/cpu.svg" alt="" width="25">
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="text-right">
-                                            <h3 class="my-1"><span data-plugin="counterup">7204</span></h3>
-                                            <p class="text-muted mb-1 text-truncate">CPU</p>
-                                        </div>
-                                    </div>
+                    <div id="modal-reputation" class="modal fade bs-example-modal-center" tabindex="-1" role="dialog" aria-labelledby="myCenterModalLabel" aria-hidden="true" style="display: none;">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="myCenterModalLabel">Репутация</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                                 </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card-box mb-0">
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered mb-0">
+                                                        
+                                                        <tbody>
+                                                        <tr>
+                                                            <th scope="row">IP</th>
+                                                            <td>127.0.0.1</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Атак за весь период</th>
+                                                            <td>1047</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Первая атака</th>
+                                                            <td>18-09-2018 : 20:41:55</td>
+                                                          
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Последняя атака</th>
+                                                            <td>18-09-2018 : 20:41:55</td>
+                                                        </tr>
 
-                                <div class="mt-4">
-                                    <span data-plugin="peity-line" data-fill="#1abc9c" data-stroke="#1abc9c"
-                                        data-width="100%" data-height="36">3,5,2,9,7,2,5,3,9,6,5,9,7</span>
-                                </div>
-                            </div> 
-                        </div> 
-
-                        <div class="col-xl-4">
-                            <div class="card-box">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="avatar-sm  rounded-circle bg-info text-center d-flex justify-content-center"
-                                            style="">
-                                           
-                                            <img src="waf-assets/ram-memory.svg" alt="" width="25">
-                                        </div>
+                                                        <tr>
+                                                            <th scope="row">Ретроспектива стран</th>
+                                                            <td>Unknown, Уганда, Черногория, Арстоцки, Нигерия</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div> <!-- end .table-responsive-->
+                                            </div> <!-- end card-box -->
+                                        </div> <!-- end col -->
                                     </div>
-                                    <div class="col-6">
-                                        <div class="text-right">
-                                            <h3 class="my-1"><span data-plugin="counterup">367</span></h3>
-                                            <p class="text-muted mb-1 text-truncate">RAM</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                    <h4></h4>
 
-                                <div class="mt-4 text-center">
-                                    <span data-plugin="peity-line" data-fill="#17a2b8" data-stroke="#17a2b8"
-                                        data-width="100%" data-height="36">5,3,9,6,5,9,7,3,5,2</span>
-                                </div>
-                            </div> 
-                        </div>
-                        <div class="col-xl-4">
-                            <div class="card-box">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div
-                                            class="avatar-sm bg-secondary rounded-circle d-flex justify-content-center">
-                                            <img src="waf-assets/server-2.svg" alt="" width="20">
+                                    <div class="card-box">
+                                        <h4 class="header-title mb-2">Векторы и кол-во атак:</h4>
+                                       
+    
+                                        <div class="pt-1">
+                                            <h6 class=" mt-0">Атак на базу: 150 <span class="float-right">15%</span></h6>
+                                            <div class="progress progress-sm m-0">
+                                                <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="15"
+                                                    aria-valuemin="0" aria-valuemax="100" style="width: 15%">
+                                                    <span class="sr-only">15% </span>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="text-right">
-                                            <h3 class="my-1"><span data-plugin="counterup">7204</span></h3>
-                                            <p class="text-muted mb-1 text-truncate">NETWORK</p>
+        
+                                        <div class="mt-2 pt-1">
+                                            <h6 class="">Атак на сервер:150 <span class="float-right">15%</span></h6>
+                                            <div class="progress progress-sm m-0">
+                                                <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="15"
+                                                    aria-valuemin="0" aria-valuemax="100" style="width: 15%">
+                                                    <span class="sr-only">15% </span>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
+        
+                                        <div class="mt-2 pt-1">
+                                            <h6 class="">Атак на клиентов:650 <span class="float-right">65%</span></h6>
+                                            <div class="progress progress-sm m-0">
+                                                <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="65"
+                                                    aria-valuemin="0" aria-valuemax="100" style="width: 65%">
+                                                    <span class="sr-only">65% </span>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                        <div class="mt-2 pt-1">
+                                            <h6 class="">Базовые аномалии:30 <span class="float-right">3%</span></h6>
+                                            <div class="progress progress-sm m-0">
+                                                <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="3"
+                                                    aria-valuemin="0" aria-valuemax="100" style="width: 3%">
+                                                    <span class="sr-only">3% </span>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                        <div class="mt-2 pt-1">
+                                            <h6 class="">Критические аномалии:20 <span class="float-right">2%</span></h6>
+                                            <div class="progress progress-sm m-0">
+                                                <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="2"
+                                                    aria-valuemin="0" aria-valuemax="100" style="width: 2%">
+                                                    <span class="sr-only">2% </span>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                        <div class="mt-2 mb pt-1">
+                                            <h6 class="">Фатальные аномалии:1 <span class="float-right">1%</span></h6>
+                                            <div class="progress progress-sm m-0">
+                                                <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="1"
+                                                    aria-valuemin="0" aria-valuemax="100" style="width: 1%">
+                                                    <span class="sr-only">1% </span>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                    </div> <!-- end card-box-->
 
-                                <div class="mt-4">
-                                    <span data-plugin="peity-line" data-fill="#6c757d" data-stroke="#6c757d"
-                                        data-width="100%" data-height="36">3,5,2,9,7,2,5,3,9,6,5,9,7</span>
                                 </div>
-                            </div>
-                        </div> 
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
 
-                    </div> -->
-                <!-- end row -->
+
+
+
+
+
+
+                
 
 
                 <div class="row">
@@ -1772,10 +1791,7 @@ X-Forwarded-For: 127.0.0.1
                                         <div class="card-body">
                                             <div id="apex-pie-4" class="apex-charts"></div>
 
-                                        </div> <!-- end card-body -->
-                                        <!-- <div class=" text-center mt-2 mb-2"><button type="button"
-                                                    class=" col-8 btn btn-secondary btn-rounded waves-effect">IP адреса
-                                                    атакующих</button></div> -->
+                                        </div> 
                                     </div> <!-- end card-->
 
                                 </div>
@@ -1783,279 +1799,10 @@ X-Forwarded-For: 127.0.0.1
                             </div> <!-- collapsed end -->
                         </div> <!-- end card-body -->
                     </div> <!-- end card-->
-                </div> <!-- end col -->
-
-
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-                    Launch demo modal
-                </button>
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                                        aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                            </div>
-                            <div class="modal-body">
-                                <table id="modal-example-1" class="table" data-paging="true" data-filtering="true"
-                                    data-sorting="true"></table>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- <div class=" col-md-6 col-sm-12">
-                            <div class="card-box">
-                                <h4 class="header-title">Pagination</h4>
-                                <p class="sub-header">
-                                    Include pagination in your FooTable.
-                                </p>
-
-                                <label class="form-inline mb-3">
-                                    Show
-                                    <select id="demo-show-entries" class="form-control form-control-sm ml-1 mr-1">
-                                        <option value="5">5</option>
-                                        <option value="10">10</option>
-                                        <option value="15">15</option>
-                                        <option value="20">20</option>
-                                    </select>
-                                    entries
-                                </label>
-
-                                <div class="table-responsive">
-                                    <table id="demo-foo-pagination" class="table mb-0 table-bordered toggle-arrow-tiny"
-                                        data-page-size="5">
-                                        <thead>
-                                            <tr>
-                                                <th data-toggle="true">IP </th>
-                                                <th>атак</th>
-                                                <th data-hide="phone"> Первая атака </th>
-                                                <th data-hide="phone"> Последняя атака </th>
-                                                <th data-hide="all"> Векторы атак </th>
-
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>192.168.0.150</td>
-                                                <td>5</td>
-                                                <td>27-10-2018 : 10:23:13</td>
-                                                <td>27-10-2018 : 10:23:13</td>
-                                                <td><span class="badge label-table badge-success">Active</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>192.168.44.150</td>
-                                                <td>33</td>
-                                                <td>27-10-2018 : 10:23:13</td>
-                                                <td>27-10-2018 : 10:23:13</td>
-                                                <td><span class="badge label-table badge-secondary">Disabled</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>192.168.14.77</td>
-                                                <td>23</td>
-                                                <td>27-10-2018 : 10:23:13</td>
-                                                <td>27-10-2018 : 10:23:13</td>
-                                                <td><span class="badge label-table badge-danger">Suspended</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>192.168.45.15</td>
-                                                <td>150</td>
-                                                <td>27-10-2018 : 10:23:13</td>
-                                                <td>27-10-2018 : 10:23:13</td>
-                                                <td><span class="badge label-table badge-success">Active</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>172.68.44.10</td>
-                                                <td>654</td>
-                                                <td>27-10-2018 : 10:23:13</td>
-                                                <td>27-10-2018 : 10:23:13</td>
-                                                <td><span class="badge label-table badge-danger">Suspended</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>92.18.40.50</td>
-                                                <td><a href="#">321</a></td>
-                                                <td><a href="#">27-10-2018 : 10:23:13</a></td>
-                                                <td>27-10-2018 : 10:23:13</td>
-                                                <td><span class="badge label-table badge-secondary">Disabled</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>192.148.74.10</td>
-                                                <td>34</td>
-                                                <td>27-10-2018 : 10:23:13</td>
-                                                <td>27-10-2018 : 10:23:13</td>
-                                                <td><span class="badge label-table badge-secondary">Disabled</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>192.18.140.150</td>
-                                                <td><a href="#">3333</a></td>
-                                                <td>27-10-2018 : 10:23:13</td>
-                                                <td>27-10-2018 : 10:23:13</td>
-                                                <td><span class="badge label-table badge-danger">Suspended</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>12.168.40.10</td>
-                                                <td>436</td>
-                                                <td>27-10-2018 : 10:23:13</td>
-                                                <td>27-10-2018 : 10:23:13</td>
-                                                <td><span class="badge label-table badge-success">Active</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>19.18.170.10</td>
-                                                <td>678</td>
-                                                <td>27-10-2018 : 10:23:13</td>
-                                                <td>27-10-2018 : 10:23:13</td>
-                                                <td><span class="badge label-table badge-danger">Suspended</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>192.168.0.150</td>
-                                                <td>895</td>
-                                                <td>27-10-2018 : 10:23:13</td>
-                                                <td>27-10-2018 : 10:23:13</td>
-                                                <td><span class="badge label-table badge-success">Active</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>192.168.0.150</td>
-                                                <td>475</td>
-                                                <td>27-10-2018 : 10:23:13</td>
-                                                <td>27-10-2018 : 10:23:13</td>
-                                                <td><span class="badge label-table badge-secondary">Disabled</span></td>
-                                            </tr>
-
-                                        </tbody>
-                                        <tfoot>
-                                            <tr class="active">
-                                                <td colspan="5">
-                                                    <div class="text-right">
-                                                        <ul
-                                                            class="pagination pagination-split justify-content-end footable-pagination m-t-10">
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tfoot>
-                                    </table>
-                                </div> 
-                            </div> 
-                        </div> end col -->
+                </div> 
 
 
 
-                <!-- <div class="col-xl-4 ">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="card-widgets">
-                                        <a href="javascript: void(0);" data-toggle="reload"><i
-                                                class="mdi mdi-refresh"></i></a>
-                                        <a data-toggle="collapse" href="#cardCollpase5" role="button"
-                                            aria-expanded="false" aria-controls="cardCollpase5"><i
-                                                class="mdi mdi-minus"></i></a>
-                                        <a href="javascript: void(0);" data-toggle="remove"><i
-                                                class="mdi mdi-close"></i></a>
-                                    </div>
-                                    <h4 class="header-title mb-0">Типы атакующих</h4>
-
-                                    <div id="cardCollpase5" class="collapse pt-3 show">
-                                        <div class="card mb-0">
-                                            <div class="card-body">
-                                                <div id="apex-pie-3" class="apex-charts"></div>
-
-                                            </div>
-                                            <div class=" text-center mt-2 mb-2"><button type="button"
-                                                    class=" col-8 btn btn-secondary btn-rounded waves-effect">IP адреса
-                                                    атакующих</button></div>
-                                        </div>
-
-                                    </div> -->
-                <!-- <div class="table-responsive">
-                                        <table class="table table-hover table-centered mb-0">
-                                            <thead>
-                                                <tr>
-                                                    <th>IP</th>
-                                                    <th>Количество</th>
-                                                    <th>Причина блокировки</th>
-                                                    <th>Забанен</th>
-                                                    <th>Подробнее</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>193.169.12.48</td>
-                                                    
-                                                    <td>82</td>
-                                                    <th>Бот</th>
-                                                    <th>да</th>
-                                                    <td>подробнее</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>143.55.12.58</td>
-                                                    
-                                                    <td>37</td>
-                                                    <th>Аномальный источник</th>
-                                                    <th>да</th>
-                                                    <td>подробнее</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>193.170.42.48</td>
-                                               
-                                                    <td>64</td>
-                                                    <th>Атака</th>
-                                                    <th>да</th>
-                                                    <td>подробнее</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>193.144.11.48</td>
-                                                  
-                                                    <td>184</td>
-                                                    <th>Атака</th>
-                                                    <th>да</th>
-                                                    <td>подробнее</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>193.160.12.144</td>
-                                                 
-                                                    <td>69</td>
-                                                    <th>Аномальный источник</th>
-                                                    <th>да</th>
-                                                    <td>подробнее</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>143.129.12.142</td>
-                                                 
-                                                    <td>82</td>
-                                                    <th>Бот</th>
-                                                    <th>да</th>
-                                                    <td>подробнее</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>123.161.12.58</td>
-                                           
-                                                    <td>64</td>
-                                                    <th>Бот</th>
-                                                    <th>да</th>
-                                                    <td>подробнее</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>173.141.42.48</td>
-                                               
-                                                    <td>184</td>
-                                                    <th>Бот</th>
-                                                    <th>да</th>
-                                                    <td>подробнее</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div> end table responsive 
-                                </div> 
-                            </div>
-                        </div> 
-                    </div> -->
-            </div>
-            <!-- end row -->
 
         </div> <!-- container -->
 

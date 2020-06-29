@@ -533,7 +533,7 @@
                             <div class="card-box ">
                                 <form class="form-row">
 
-                                    <div class="col-6">
+                                    <div class=" col-12 col-lg-6">
                                         <div class="row">
                                             <div class="col-12">
                                                 <h5 class="mb-3  bg-light p-2"><i class="mdi mdi-settings mr-1"></i>
@@ -548,12 +548,12 @@
                                                         <div class="input-group-text"><i class="mdi mdi-database "></i>
                                                         </div>
                                                     </div>
-                                                    <select  class="form-control"   name="" id="inlineFormInputGroup">
+                                                    <select class="form-control" name="" id="inlineFormInputGroup">
                                                         <option value="">1 атака</option>
                                                         <option selected value="">5 атак</option>
                                                         <option value="">10 атак</option>
                                                         <option value="">25 атак</option>
-                                                        </select>
+                                                    </select>
 
 
                                                 </div>
@@ -592,12 +592,12 @@
                                                         <div class="input-group-text"><i class="mdi mdi-server "></i>
                                                         </div>
                                                     </div>
-                                                    <select  class="form-control"   name="" id="inlineFormInputGroup">
+                                                    <select class="form-control" name="" id="inlineFormInputGroup">
                                                         <option value="">1 атака</option>
                                                         <option selected value="">5 атак</option>
                                                         <option value="">10 атак</option>
                                                         <option value="">25 атак</option>
-                                                        </select>
+                                                    </select>
                                                 </div>
                                             </div>
                                             <div class="col-xl-8 col-lg-12">
@@ -628,12 +628,12 @@
                                                         <div class="input-group-text"><i class="mdi mdi-account "></i>
                                                         </div>
                                                     </div>
-                                                    <select  class="form-control"   name="" id="inlineFormInputGroup">
+                                                    <select class="form-control" name="" id="inlineFormInputGroup">
                                                         <option value="">1 атака</option>
                                                         <option selected value="">5 атак</option>
                                                         <option value="">10 атак</option>
                                                         <option value="">25 атак</option>
-                                                        </select>
+                                                    </select>
                                                 </div>
                                             </div>
                                             <div class="col-xl-8 col-lg-12">
@@ -663,7 +663,7 @@
 
 
 
-                                    <div class="col-6">
+                                    <div class="col-12 col-lg-6">
                                         <div class="col-12">
                                             <div class="row">
                                                 <div class="col-12">
@@ -680,12 +680,12 @@
                                                                     class="mdi mdi-shield text-primary "></i>
                                                             </div>
                                                         </div>
-                                                        <select  class="form-control"   name="" id="inlineFormInputGroup">
+                                                        <select class="form-control" name="" id="inlineFormInputGroup">
                                                             <option value="">1 атака</option>
                                                             <option selected value="">5 атак</option>
                                                             <option value="">10 атак</option>
                                                             <option value="">25 атак</option>
-                                                            </select>
+                                                        </select>
                                                     </div>
                                                 </div>
                                                 <div class="col-xl-8 col-lg-12">
@@ -721,12 +721,12 @@
                                                             <div class="input-group-text"><i
                                                                     class="mdi mdi-shield text-warning "></i></div>
                                                         </div>
-                                                        <select  class="form-control"   name="" id="inlineFormInputGroup">
+                                                        <select class="form-control" name="" id="inlineFormInputGroup">
                                                             <option value="">1 атака</option>
                                                             <option selected value="">5 атак</option>
                                                             <option value="">10 атак</option>
                                                             <option value="">25 атак</option>
-                                                            </select>
+                                                        </select>
                                                     </div>
                                                 </div>
                                                 <div class="col-xl-8 col-lg-12">
@@ -762,12 +762,12 @@
                                                                     class="mdi mdi-shield text-danger "></i>
                                                             </div>
                                                         </div>
-                                                        <select  class="form-control"   name="" id="inlineFormInputGroup">
+                                                        <select class="form-control" name="" id="inlineFormInputGroup">
                                                             <option value="">1 атака</option>
                                                             <option selected value="">5 атак</option>
                                                             <option value="">10 атак</option>
                                                             <option value="">25 атак</option>
-                                                            </select>
+                                                        </select>
                                                     </div>
                                                 </div>
                                                 <div class="col-xl-8 col-lg-12">
@@ -796,6 +796,11 @@
                                         </div>
                                     </div>
 
+                                    <div class="col-12 text-left">
+
+                                    <p class="text-muted">*Блокировка на указанное время осуществляется по IP адресу атакующего.<br>*Не стоит выставлять время блокировки слишком высоким во избежание блокировки шлюза провайдера.</p>
+                                    </div>
+
 
 
 
@@ -815,6 +820,330 @@
 
 
 
+                    </div>
+
+
+
+                    <div class="row">
+                        
+                        <div class="col-12">
+                            <div class="card-box ">
+                                
+                                <form class="form-row">
+                                    <div class="col-12">
+                                        <h5 class="mb-3  bg-light p-2"><i class="mdi mdi-settings mr-1"></i>
+                                            Конфигурация WAF
+                                        </h5>
+                                    </div>
+
+                                    <div class="col-12 col-lg-2">
+                                        <div class="row mb-2">
+
+                                
+                                            
+
+
+                                            <div class=" col-lg-12">
+                                                <label class="" for="inlineFormInputGroup">DmzLogin</label>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="DmzLogin" aria-label="DmzLogin" aria-describedby="basic-addon2">
+                                                    <div class="input-group-append">
+                                                       
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 mt-2 ">
+                                               
+                                                <hr class="border-light mb-2 ">
+                                            </div>
+
+                                            <div class=" col-lg-12">
+                                                <label class="" for="inlineFormInputGroup">DmzPassword</label>
+                                                <div class="input-group">
+                                                    <input type="password" class="form-control" placeholder="DmzPassword" aria-label="DmzPassword" aria-describedby="basic-addon2">
+                                                    <div class="input-group-append">
+                                                       
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 mt-2 ">
+                                               
+                                                <hr class="border-light mb-2 ">
+                                            </div>
+
+
+                                            <div class=" col-lg-12 ">
+                                                <label class="" for="inlineFormInputGroup">WebRoot</label>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="WebRoot" aria-label="WebRoot" aria-describedby="basic-addon2">
+                                                    <div class="input-group-append">
+                                                       
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="col-12 mt-2 ">
+                                                <hr class="border-light mb-2 ">
+                                            </div>
+
+
+                                            <div class="col-lg-12 col-12">
+                                                <label class="" for="inlineFormInputGroup">IsObserver</label>
+                                                
+                                                    <div class="custom-control custom-switch ">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="Switch1" checked>
+                                                        <label class="custom-control-label"
+                                                            for="Switch1">Включено</label>
+                                                    </div>
+                                            </div>
+
+                                            <div class="col-12 mt-2 ">
+                                                <hr class="border-light mb-2 ">
+                                            </div>
+                                            <div class="col-lg-12 col-12">
+                                                <label class="" for="inlineFormInputGroup">DisableOnCloudDown</label>
+                                                
+                                                    <div class="custom-control custom-switch ">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="Switch2" checked>
+                                                        <label class="custom-control-label"
+                                                            for="Switch2">Включено</label>
+                                                    </div>
+                                            </div>
+
+                                            <div class="col-12 mt-2 ">
+                                                <hr class="border-light mb-2 ">
+                                            </div>
+                                            <div class="col-lg-12 col-12">
+                                                <label class="" for="inlineFormInputGroup">DisableBotProtection</label>
+                                                
+                                                    <div class="custom-control custom-switch ">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="Switch3" checked>
+                                                        <label class="custom-control-label"
+                                                            for="Switch3">Включено</label>
+                                                    </div>
+                                            </div>
+
+
+                                          
+
+                                            
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-12 col-lg-5">
+                                        <div class="row">
+
+                                            <div class=" col-lg-12">
+                                                <label class="" for="inlineFormInputGroup">Dmz</label>
+
+                                                <div class="input-group ">
+                                                    
+                                                    <input type="text" class="form-control" placeholder="Dmz" aria-label="Dmz" aria-describedby="basic-addon2">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-success waves-effect waves-light" type="button">Добавить</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 mt-2 ">
+                                                <hr class="border-light mb-2 ">
+                                            </div>
+
+
+                                            <div class=" col-12" >                           
+                                              
+                                                    <div class="table-responsive" style="height: 500px; overflow: hidden; overflow-y: auto;" >
+                                                        <table id="table-danger" class="table mb-0 table-bordered toggle-arrow-tiny" >
+                                                            <thead>
+                                                                <tr>
+                                                                    <th >Dmz</th>
+                                                                    <th style="width: 10px;" >Удалить</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td> /admin-panel-address/test</td>
+                                                                    <td><button class="btn btn-danger waves-effect waves-light" type="button"><i class="far fa-trash-alt"></i></button></td>
+                                                                    
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>/admin-panel-address/panel1</td>
+                                                                    <td><button class="btn btn-danger waves-effect waves-light" type="button"><i class="far fa-trash-alt"></i></button></td>
+                                                                   
+                                                                </tr>
+                                                                
+                                                                <tr>
+                                                                    <td>/admin-panel-address/download</td>
+                                                                    <td><button class="btn btn-danger waves-effect waves-light" type="button"><i class="far fa-trash-alt"></i></button></td>
+                                                                    
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>/admin-panel-address/panel2</td>
+                                                                    <td><button class="btn btn-danger waves-effect waves-light" type="button"><i class="far fa-trash-alt"></i></button></td>
+                                                                  
+                                                                </tr>
+                                                               
+                                                                <tr>
+                                                                    <td>/admin-panel-address/dashboard</td>
+                                                                    <td><button class="btn btn-danger waves-effect waves-light" type="button"><i class="far fa-trash-alt"></i></button></td>
+                                                                   
+                                                                </tr>
+                    
+                                                                <tr>
+                                                                    <td>/admin-panel-address/dashboard2</td>
+                                                                    <td><button class="btn btn-danger waves-effect waves-light" type="button"><i class="far fa-trash-alt"></i></button></td>
+                                                                   
+                                                                </tr>
+                                                                
+                                                                <tr>
+                                                                    <td>/admin-panel-address/success</td>
+                                                                    <td><button class="btn btn-danger waves-effect waves-light" type="button"><i class="far fa-trash-alt"></i></button></td>
+                                                                   
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>/admin-panel-address/test</td>
+                                                                    <td><button class="btn btn-danger waves-effect waves-light" type="button"><i class="far fa-trash-alt"></i></button></td>
+                                                                   
+                                                                </tr>
+                                                               
+                                                                <tr>
+                                                                    <td>/admin-panel-address/test2</td>
+                                                                    <td><button class="btn btn-danger waves-effect waves-light" type="button"><i class="far fa-trash-alt"></i></button></td>
+                                                                   
+                                                                </tr>
+                    
+                                                            </tbody>
+                                                         
+                                                        </table>
+                                                    </div> <!-- end .table-responsive-->
+                                               
+                                            </div>
+
+                                            
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-lg-5">
+                                        <div class="row">
+
+
+                                            <div class=" col-lg-12">
+                                                <label class="" for="inlineFormInputGroup">FileUploadForms</label>
+                                                
+                                                
+
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="FileUploadForms" aria-label="FileUploadForms" aria-describedby="basic-addon2">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-success waves-effect waves-light" type="button">Добавить</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mt-2 ">
+                                                <hr class="border-light mb-2 ">
+                                            </div>
+
+                                            <div class=" col-12" >                           
+                                              
+                                                <div class="table-responsive" style="height: 500px; overflow: hidden; overflow-y: auto;" >
+                                                    <table id="table-danger" class="table mb-0 table-bordered toggle-arrow-tiny" >
+                                                        <thead>
+                                                            <tr>
+                                                                <th >FileUploadForms</th>
+                                                                <th style="width: 10px;" >Удалить</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>/path_to_upload_controller/to_bypass_waf1/</td>
+                                                                <td><button class="btn btn-danger waves-effect waves-light" type="button"><i class="far fa-trash-alt"></i></button></td>
+                                                                
+                                                            </tr>
+                                                            <tr>
+                                                                <td>/path_to_upload_controller/to_bypass_waf2/</td>
+                                                                <td><button class="btn btn-danger waves-effect waves-light" type="button"><i class="far fa-trash-alt"></i></button></td>
+                                                               
+                                                            </tr>
+                                                            
+                                                            <tr>
+                                                                <td>/path_to_upload_controller/to_bypass_waf3/</td>
+                                                                <td><button class="btn btn-danger waves-effect waves-light" type="button"><i class="far fa-trash-alt"></i></button></td>
+                                                                
+                                                            </tr>
+                                                            <tr>
+                                                                <td>/path_to_upload_controller/to_bypass_waf4/</td>
+                                                                <td><button class="btn btn-danger waves-effect waves-light" type="button"><i class="far fa-trash-alt"></i></button></td>
+                                                              
+                                                            </tr>
+                                                           
+                                                            <tr>
+                                                                <td>/path_to_upload_controller/to_bypass_waf5/</td>
+                                                                <td><button class="btn btn-danger waves-effect waves-light" type="button"><i class="far fa-trash-alt"></i></button></td>
+                                                               
+                                                            </tr>
+                
+                                                            <tr>
+                                                                <td>/path_to_upload_controller/to_bypass_waf6/</td>
+                                                                <td><button class="btn btn-danger waves-effect waves-light" type="button"><i class="far fa-trash-alt"></i></button></td>
+                                                               
+                                                            </tr>
+                                                            
+                                                            <tr>
+                                                                <td>/path_to_upload_controller/to_bypass_waf7/</td>
+                                                                <td><button class="btn btn-danger waves-effect waves-light" type="button"><i class="far fa-trash-alt"></i></button></td>
+                                                               
+                                                            </tr>
+                                                            <tr>
+                                                                <td>/path_to_upload_controller/to_bypass_waf8/</td>
+                                                                <td><button class="btn btn-danger waves-effect waves-light" type="button"><i class="far fa-trash-alt"></i></button></td>
+                                                               
+                                                            </tr>
+                                                           
+                                                            <tr>
+                                                                <td>/path_to_upload_controller/to_bypass_waf9/</td>
+                                                                <td><button class="btn btn-danger waves-effect waves-light" type="button"><i class="far fa-trash-alt"></i></button></td>
+                                                               
+                                                            </tr>
+                
+                                                        </tbody>
+                                                     
+                                                    </table>
+                                                </div> <!-- end .table-responsive-->
+                                           
+                                        </div>
+
+
+
+                                        </div>
+                                    </div>
+
+                                    <div class="text-right col-12 mt-2">
+                                        <button type="submit"
+                                            class="btn btn-success waves-effect waves-light mt-2 float-left"><i
+                                                class="mdi mdi-content-save"></i> по умолчанию</button>
+                                        <button type="submit" class="btn btn-success waves-effect waves-light mt-2"><i
+                                                class="mdi mdi-content-save"></i> сохранить</button>
+                                    </div>
+
+
+                                    
+
+
+
+
+
+
+                                </form>
+                            </div>
+                        </div>
                     </div>
 
 

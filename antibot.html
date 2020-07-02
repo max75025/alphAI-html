@@ -11,6 +11,8 @@
     <!-- App favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico">
 
+    
+
     <!-- plugin css -->
     <link href="assets/libs/jquery-vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
 
@@ -21,7 +23,9 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
     <link rel="stylesheet" href="waf-assets/css/scroll.css">
+
 
 
 
@@ -923,7 +927,28 @@
 
 
                 <div class="row">
-                    <div class="col-xl-4 ">
+
+                    <div class="col-xl-6 col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="float-right d-none d-md-inline-block">
+                                    <div class="btn-group mb-2">
+                                        <button type="button" class="btn btn-xs btn-secondary">График</button>
+                                        <button type="button" class="btn btn-xs btn-light">Таблица</button>
+                                    </div>
+                                </div>
+                                <h4 class="header-title">User Agent</h4>
+
+                                <div class="mt-4 ">
+                                    <div id="apex-radar" class="apex-radar "></div>
+                                </div>
+                            </div> <!-- end card-body-->
+                        </div> <!-- end card-->
+                    </div> <!-- end col -->
+
+
+
+                    <!-- <div class="col-xl-4 ">
                         <div class="card">
                             <div class="card-body">
                                 <div class="float-right d-none d-md-inline-block">
@@ -935,36 +960,15 @@
                                 
                                 <h4 class="header-title mb-0">User Agent ботов</h4>
 
-                                <!-- <div class="row mt-4 text-center">
-                                    <div class="col-4">
-                                        <p class="text-muted font-15 mb-1 text-truncate">Сервер</p>
-                                        <h4><i class="fe-arrow-down text-success mr-1"></i>3.8k</h4>
-                                    </div>
-                                    <div class="col-4">
-                                        <p class="text-muted font-15 mb-1 text-truncate">База</p>
-                                        <h4><i class="fe-arrow-up text-danger mr-1"></i>1.1k</h4>
-                                    </div>
-                                    <div class="col-4">
-                                        <p class="text-muted font-15 mb-1 text-truncate">Клиент</p>
-                                        <h4><i class="fe-arrow-down text-success mr-1"></i>25k</h4>
-                                    </div>
-                                </div> -->
-
                                
-                                    <!-- <div class="card mb-0">
-                                        <div class="card-body ">
-                                            <div id="apex-pie-5" class="apex-charts "></div>
-
-                                        </div> 
-                                    </div> end card -->
                                     <div id="apex-pie-5" class="apex-charts mt-4"></div>
 
                               
 
-                            </div> <!-- collapsed end -->
-                        </div> <!-- end card-body -->
-                    </div> <!-- end card-->
-                    <div class="col-xl-4 ">
+                            </div> 
+                        </div> 
+                    </div> end card -->
+                    <!-- <div class="col-xl-4 ">
                         <div class="card">
                             <div class="card-body">
                                 <div class="float-right d-none d-md-inline-block">
@@ -1040,43 +1044,100 @@
                                         </tbody>
                                      
                                     </table>
-                                </div> <!-- end .table-responsive-->
+                                </div> 
 
 
-                            </div> <!-- collapsed end -->
-                        </div> <!-- end card-body -->
-                    </div> <!-- end card-->
+                            </div> 
+                        </div> 
+                    </div>  -->
 
-
-                    <div class="col-xl-4 col-12">
+                    <div class="col-xl-6 col-12"> 
                         <div class="card">
                             <div class="card-body">
                                 <div class="float-right d-none d-md-inline-block">
                                     <div class="btn-group mb-2">
-                                        <button type="button" class="btn btn-xs btn-secondary">График</button>
-                                        <button type="button" class="btn btn-xs btn-light">Таблица</button>
+                                        <button type="button" class="btn btn-xs btn-light">График</button>
+                                        <button type="button" class="btn btn-xs btn-secondary">Таблица</button>
                                     </div>
                                 </div>
-                                
-                                <h4 class="header-title">Страны ботов</h4>
-                                <!-- <div class="row mt-4 text-center">
-                                    <div class="col-6">
-                                        <p class="text-muted font-15 mb-1 text-truncate">атаки</p>
-                                        <h4><i class="fe-arrow-down text-success mr-1"></i>3.8k</h4>
-                                    </div>
-                                    <div class="col-6">
-                                        <p class="text-muted font-15 mb-1 text-truncate">аномалии</p>
-                                        <h4><i class="fe-arrow-up text-danger mr-1"></i>1.1k</h4>
-                                    </div>
-                                  
-                                </div> -->
-                                <div class="" dir="ltr">
-                                    <!-- <div id="apex-pie-2" class="apex-charts"></div> -->
-                                    <div id="apex-bar-bot-country" class="apex-charts"></div> 
-                                </div>
-                            </div>
-                        </div> <!-- end card-->
-                    </div> <!-- end col -->
+                               
+                                <h4 class="header-title mb-0">ОC</h4>
+
+                                <div class="table-responsive" style="height: 375px; overflow: hidden; overflow-y: auto;" >
+                                    <table id="table-danger" class="table mb-0 table-bordered toggle-arrow-tiny"  >
+                                        <thead>
+                                            <tr>
+                                                <th >Название</th>
+                                                <th style="min-width: 75px;">Боты</th>
+                                                <th style="min-width: 100px;">Источники</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Windows 10</td>
+                                                <td>785</td>
+                                                <td>154</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mint OS</td>
+                                                <td>45</td>
+                                                <td>247</td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>Windows 7</td>
+                                                <td>456</td>
+                                                <td>447</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ubuntu18.06</td>
+                                                <td>45</td>
+                                                <td>2</td>
+                                            </tr>
+                                           
+                                            <tr>
+                                                <td>Windows Vista</td>
+                                                <td>456</td>
+                                                <td>440</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>OS X</td>
+                                                <td>5</td>
+                                                <td>2%</td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>Android</td>
+                                                <td>146</td>
+                                                <td>44</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Windows xp</td>
+                                                <td>45</td>
+                                                <td>2</td>
+                                            </tr>
+                                           
+                                            <tr>
+                                                <td>Unknown</td>
+                                                <td>456</td>
+                                                <td>492</td>
+                                            </tr>
+
+                                        </tbody>
+                                     
+                                    </table>
+                                </div> 
+
+
+                            </div> 
+                        </div> 
+                    </div>  
+
+
+             
+
+
                     
 
 
@@ -1085,7 +1146,7 @@
 
 
                 <div class="row">
-                    <div class="col-xl-4 ">
+                    <!-- <div class="col-xl-4 ">
                         <div class="card">
                             <div class="card-body">
                                 <div class="float-right d-none d-md-inline-block">
@@ -1100,10 +1161,10 @@
                                  
                                             <div id="apex-pie-ua-source" class="apex-charts mt-4"></div>
 
-                            </div> <!-- collapsed end -->
-                        </div> <!-- end card-body -->
-                    </div> <!-- end card-->
-                    <div class="col-xl-4 ">
+                            </div> 
+                        </div> 
+                    </div>  -->
+                    <!-- <div class="col-xl-4 ">
                         <div class="card">
                             <div class="card-body">
                                 <div class="float-right d-none d-md-inline-block">
@@ -1123,21 +1184,137 @@
 
                               
 
-                            </div> <!-- collapsed end -->
-                        </div> <!-- end card-body -->
-                    </div> <!-- end card-->
+                            </div> 
+                        </div> 
+                    </div>  -->
 
-
-                    <div class="col-xl-4 col-12">
+                    <div class="col-xl-3 col-lg-6 col-12">
                         <div class="card">
                             <div class="card-body">
-                                <div class="float-right d-none d-md-inline-block">
+                                <!-- <div class="float-right d-none d-md-inline-block">
                                     <div class="btn-group mb-2">
                                         <button type="button" class="btn btn-xs btn-secondary">График</button>
                                         <button type="button" class="btn btn-xs btn-light">Таблица</button>
                                     </div>
+                                </div> -->
+                                
+                                <h4 class="header-title">Топ стран ботов</h4>
+                                <!-- <div class="row mt-4 text-center">
+                                    <div class="col-6">
+                                        <p class="text-muted font-15 mb-1 text-truncate">атаки</p>
+                                        <h4><i class="fe-arrow-down text-success mr-1"></i>3.8k</h4>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="text-muted font-15 mb-1 text-truncate">аномалии</p>
+                                        <h4><i class="fe-arrow-up text-danger mr-1"></i>1.1k</h4>
+                                    </div>
+                                  
+                                </div> -->
+                                <div class="" dir="ltr">
+                                    <!-- <div id="apex-pie-2" class="apex-charts"></div> -->
+                                    <div id="apex-bar-bot-country" class="apex-charts"></div> 
                                 </div>
-                                <h4 class="header-title">Страны источников</h4>
+                            </div>
+                        </div> <!-- end card-->
+                    </div> <!-- end col -->
+
+
+                    <div class="col-xl-3 col-lg-6 col-12"> 
+                        <div class="card">
+                            <div class="card-body">
+                                <!-- <div class="float-right d-none d-md-inline-block">
+                                    <div class="btn-group mb-2">
+                                        <button type="button" class="btn btn-xs btn-light">График</button>
+                                        <button type="button" class="btn btn-xs btn-secondary">Таблица</button>
+                                    </div>
+                                </div> -->
+                               
+                                <h4 class="header-title mb-3">Все страны ботов</h4>
+
+                                <div class="table-responsive " style="height: 375px; overflow: hidden; overflow-y: auto;" >
+                                    <table id="table-danger" class="table mb-0 table-bordered toggle-arrow-tiny"  >
+                                        <thead>
+                                            <tr>
+                                                <th >Название</th>
+                                                <th style="min-width: 75px;">кол.</th>
+                                              
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Windows 10</td>
+                                                <td>785</td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>Mint OS</td>
+                                                <td>45</td>
+                                               
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>Windows 7</td>
+                                                <td>456</td>
+                                               
+                                            </tr>
+                                            <tr>
+                                                <td>Ubuntu18.06</td>
+                                                <td>45</td>
+                                              
+                                            </tr>
+                                           
+                                            <tr>
+                                                <td>Windows Vista</td>
+                                                <td>456</td>
+                                          
+                                            </tr>
+
+                                            <tr>
+                                                <td>OS X</td>
+                                                <td>5</td>
+                                         
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>Android</td>
+                                                <td>146</td>
+                                          
+                                            </tr>
+                                            <tr>
+                                                <td>Windows xp</td>
+                                                <td>45</td>
+                                            
+                                            </tr>
+                                           
+                                            <tr>
+                                                <td>Unknown</td>
+                                                <td>456</td>
+                                             
+                                            </tr>
+
+                                        </tbody>
+                                     
+                                    </table>
+                                </div> 
+
+
+                            </div> 
+                        </div> 
+                    </div>  
+
+                  
+
+
+                    <div class="col-xl-3 col-lg-6  col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <!-- <div class="float-right d-none d-md-inline-block">
+                                    <div class="btn-group mb-2">
+                                        <button type="button" class="btn btn-xs btn-secondary">График</button>
+                                        <button type="button" class="btn btn-xs btn-light">Таблица</button>
+                                    </div>
+                                </div> -->
+                                <h4 class="header-title">Топ стран источников</h4>
                                 
                                 <div class="" dir="ltr">
                                     <!-- <div id="apex-pie-2" class="apex-charts"></div> -->
@@ -1146,6 +1323,90 @@
                             </div>
                         </div> <!-- end card-->
                     </div> <!-- end col -->
+
+
+                    <div class="col-xl-3 col-lg-6 col-12"> 
+                        <div class="card">
+                            <div class="card-body">
+                                <!-- <div class="float-right d-none d-md-inline-block">
+                                    <div class="btn-group mb-2">
+                                        <button type="button" class="btn btn-xs btn-light">График</button>
+                                        <button type="button" class="btn btn-xs btn-secondary">Таблица</button>
+                                    </div>
+                                </div> -->
+                               
+                                <h4 class="header-title mb-3">Все страны источников</h4>
+
+                                <div class="table-responsive " style="height: 375px; overflow: hidden; overflow-y: auto;" >
+                                    <table id="table-danger" class="table mb-0 table-bordered toggle-arrow-tiny"  >
+                                        <thead>
+                                            <tr>
+                                                <th >Название</th>
+                                                <th style="min-width: 75px;">кол.</th>
+                                              
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Windows 10</td>
+                                                <td>785</td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>Mint OS</td>
+                                                <td>45</td>
+                                               
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>Windows 7</td>
+                                                <td>456</td>
+                                               
+                                            </tr>
+                                            <tr>
+                                                <td>Ubuntu18.06</td>
+                                                <td>45</td>
+                                              
+                                            </tr>
+                                           
+                                            <tr>
+                                                <td>Windows Vista</td>
+                                                <td>456</td>
+                                          
+                                            </tr>
+
+                                            <tr>
+                                                <td>OS X</td>
+                                                <td>5</td>
+                                         
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>Android</td>
+                                                <td>146</td>
+                                          
+                                            </tr>
+                                            <tr>
+                                                <td>Windows xp</td>
+                                                <td>45</td>
+                                            
+                                            </tr>
+                                           
+                                            <tr>
+                                                <td>Unknown</td>
+                                                <td>456</td>
+                                             
+                                            </tr>
+
+                                        </tbody>
+                                     
+                                    </table>
+                                </div> 
+
+
+                            </div> 
+                        </div> 
+                    </div>  
                     
 
 
@@ -1401,12 +1662,6 @@
     <script src="assets/js/pages/foo-tables.init.js"></script>
 
 
-
-
-
-
-
-
     <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
     <script src="assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
     <script src="assets/libs/jquery-vectormap/jquery-jvectormap-1.2.2.min.js"></script>
@@ -1430,11 +1685,6 @@
 
 
 
-
-
-
-    <!-- Init js-->
-    <script src="assets/js/pages/form-pickers.init.js"></script>
 
     <script>
         var options = {
@@ -1547,7 +1797,7 @@
             series: [19, 256, 507, 432,75],
             legend: {
                 show: !0,
-                position: "right",
+                position: "bottom",
                 horizontalAlign: "center",
                 verticalAlign: "middle",
                 floating: !1,
@@ -1614,7 +1864,7 @@
 
         options = {
             chart: {
-                height: 300,
+                height: 395,
                 type: "bar",
                 toolbar: {
                     show: !1
@@ -1631,11 +1881,11 @@
                 enabled: !1
             },
             series: [{
-                data: [400, 120, 345, 123,23,12]
+                data: [400, 120, 345, 123,23,12, 234, 541, 346, 54]
             }],
             colors: ["#3bafda"],
             xaxis: {
-                categories: ["USA", "Russia", "Uganda", "Nigeria", "France", "England"]
+                categories: ["USA", "Russia", "Uganda", "Nigeria", "France", "England", "German", "Canada", "Chine", "Japan"]
             },
             states: {
                 hover: {
@@ -1728,10 +1978,86 @@
         (chart = new ApexCharts(document.querySelector("#apex-area-firewall"), options)).render();
 
 
+        var options = {
+          series: [{
+          name: 'Источники',
+          data: [20, 100, 40, 30, 50, 80, 33],
+        },
+        {
+          name: 'Боты',
+          data: [45, 10, 44, 12, 88, 47, 45],
+        }],
+          chart: {
+          height: 350,
+          type: 'radar',
+          toolbar: {
+                    show: false
+                },
+        },
+        dataLabels: {
+          enabled: true
+        },
+
+        legend: {
+                show: !0,
+                position: "right",
+                horizontalAlign: "center",
+                verticalAlign: "middle",
+                floating: !1,
+                fontSize: "14px",
+                offsetX: -20,
+                offsetY: 0
+            },
+       
+        plotOptions: {
+          radar: {
+            size: 160,
+            polygons: {
+              strokeColors: '#e9e9e9',
+              fill: {
+                colors: ['#f8f8f8', '#fff']
+              }
+            }
+          }
+        },
+        title: {
+          text: 'Radar with Polygon Fill'
+        },
+        colors: ["#3bafda","#1abc9c"],
+        markers: {
+          size: 4,
+          colors: ['#fff'],
+          strokeColor: "#6c757d",
+          strokeWidth: 2,
+        },
+        tooltip: {
+          y: {
+            formatter: function(val) {
+              return val
+            }
+          }
+        },
+        xaxis: {
+          categories: ["Firefox/68.0", "Safari 31.1.1", "Chrome/58.0.3029.83", "Gecko/44.8.32", "Python3.3.0.12.22", 'Edge 17.8', 'Unknown']
+        },
+        yaxis: {
+          tickAmount: 7,
+          labels: {
+            formatter: function(val, i) {
+              if (i % 2 === 0) {
+                return val
+              } else {
+                return ''
+              }
+            }
+          }
+        }
+        };
+
+        (chart = new ApexCharts(document.querySelector("#apex-radar"), options)).render();
+
+
     </script>
-
-
-
 
 
 

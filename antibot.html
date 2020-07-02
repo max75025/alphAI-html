@@ -1547,15 +1547,15 @@
             series: [19, 256, 507, 432,75],
             legend: {
                 show: !0,
-                position: "bottom",
+                position: "right",
                 horizontalAlign: "center",
                 verticalAlign: "middle",
                 floating: !1,
                 fontSize: "14px",
-                offsetX: 0,
+                offsetX: -20,
                 offsetY: 0
             },
-            labels: ["series-1", "series-2", "series3","series-4", "series-5"],
+            labels: ["Firefox/68.0", "Safari 31.1.1", "Chrome/58.0.3029.83", "Gecko/44.8.32", "Python3.3.0.12.22"],
             colors: ["#3bafda", "#26c6da", "#00b19d", "#6e7886", "#00b59d", "#02b19d",],
             responsive: [{
                 breakpoint: 600,
@@ -1574,6 +1574,40 @@
         (chart = new ApexCharts(document.querySelector("#apex-pie-6"), options)).render();
 
         (chart = new ApexCharts(document.querySelector("#apex-pie-ua-source"), options)).render();
+
+
+        options = {
+            chart: {
+                height: 270,
+                type: "pie"
+            },
+            series: [19, 256, 507, 432,75],
+            legend: {
+                show: !0,
+                position: "right",
+                horizontalAlign: "center",
+                verticalAlign: "middle",
+                floating: !1,
+                fontSize: "14px",
+                offsetX: -20,
+                offsetY: 0
+            },
+            labels: ["Russia", "USA", "England","Kanada", "France"],
+            colors: ["#3bafda", "#26c6da", "#00b19d", "#6e7886", "#00b59d", "#02b19d",],
+            responsive: [{
+                breakpoint: 600,
+                options: {
+                    chart: {
+                        height: 210
+                    },
+                    legend: {
+                        show: !1
+                    }
+                }
+            }]
+        };
+
+       
         (chart = new ApexCharts(document.querySelector("#apex-pie-os-source"), options)).render();
 
 

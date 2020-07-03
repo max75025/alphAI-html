@@ -1,0 +1,29 @@
+/* .bg-waf-blog-pattern{
+    background-image: url(../img/pattern-tifany.svg);
+} */
+
+/* .bg-waf-gray{
+    background-color: #313330;
+} */
+
+/* .navbar.nav-trans{
+    background-color: rgba(255, 255, 255, 0.4);
+} */
+
+
+.waf-bg-header{
+    background-color: #36404a;
+}
+
+
+.nav-sticky  .waf-sticky-header{
+    background-color: #36404a;
+}
+
+.nav-sticky .navbar-custom .navbar-nav .waf-nav-item.active .nav-link{
+    color:white;
+}
+
+.nav-sticky .navbar-custom .navbar-nav .waf-nav-item .nav-link{
+    color:rgb(216, 215, 215);
+}
